@@ -1,0 +1,4 @@
+./saved_model/*
+./trained_model/*
+trained_model
+saved_model
