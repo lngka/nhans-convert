@@ -10,8 +10,8 @@ converter = tf.compat.v1.lite.TFLiteConverter.from_saved_model(
     output_arrays=['add_72'])  
 
 
-converter.optimizations = [tf.lite.Optimize.DEFAULT]
+#converter.optimizations = [tf.lite.Optimize.DEFAULT]
 
 tflite_model = converter.convert()
-with open('./n_hans_quantized.tflite', 'wb') as f:
+with open('./n_hans.tflite', 'wb') as f:
     f.write(tflite_model)

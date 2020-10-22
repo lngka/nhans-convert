@@ -3,8 +3,8 @@ import tensorflow as tf
 tf.compat.v1.disable_v2_behavior()
 
 trained_checkpoint_prefix = './trained_model/81448_0-1000000'
-#saved_model_dir = os.path.join('saved_model', '0') # was used to convert to tflite
-saved_model_dir = os.path.join('saved_model', '1') # going to be used to convert to tfjs
+saved_model_dir = os.path.join('saved_model', '0') # was used to convert to tflite
+#saved_model_dir = os.path.join('saved_model', '1') 
 
 
 graph = tf.Graph()
